@@ -1,0 +1,12 @@
+server:
+  port: 8761
+spring:
+  profiles: peer1
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:8769/eureka/
+
+# lesson 10 : 高可用的服务注册中心 http://blog.csdn.net/forezp/article/details/70183572 add this file
